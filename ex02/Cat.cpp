@@ -41,4 +41,6 @@ void Cat::makeSound(void) const {
 	std::cout << "Meow! Meow!" << std::endl; 
 }
 
-Brain *Cat::getBrain(void) const { return _brain; }
+Brain *Cat::getBrain(void) { return _brain; }
+
+const Brain *Cat::getBrain(void) const { return _brain; }
